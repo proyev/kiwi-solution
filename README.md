@@ -8,7 +8,7 @@ In case smth does not run properly, please drop me a msg, I'll try to do my best
 
 As I mentioned, Redis storage simply refused to connect when running on Docker. Tried to find the cause of the problem, and after a lot of time wasted without any solution, had to pass on this part.
 
-But general thoughts on realization: upon retrieval of the door data from the db, use the sensor_uuid as a key to retrieve the last_communication_ts for the door, and cache the result, with TTL pre-set, so it can be easily be reached by repeated calls later on.
+But general thoughts on realization: upon retrieval of the door data from the db, use the sensor_uuid as a key to retrieve the last_communication_ts for the door, and cache the result, with TTL pre-set, so it can be easily be reached from cache by repeated calls later on.
 
 
 1. Run the set-up from task.md
