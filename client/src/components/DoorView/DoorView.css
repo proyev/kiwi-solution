@@ -1,0 +1,21 @@
+.modal-container {
+    align-items: center;
+    background-color: rgba(105, 105, 105, .3);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+}
+
+.door-info-container {
+    background-color: rgb(21, 102, 148);
+    height: 75%;
+    width: 75%;
+}
+
+.users-container {
+    overflow-y: auto;
+}
